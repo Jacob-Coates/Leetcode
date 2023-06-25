@@ -13,3 +13,9 @@ class Solution:
         #Sort list and return array of numbers to k
         q = sorted(list(store.keys()),key = lambda x: -store[x])
         return q[:k]
+
+# Secondary solution in one line
+# from collections import Counter
+# class Solution:
+#     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+#         return [x[0] for x in Counter(nums).most_common(k)]
